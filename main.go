@@ -11,7 +11,6 @@ func test(w http.ResponseWriter, r *http.Request)  {
 }
 
 func main() {
-	fmt.Println("Hello")
 	http.HandleFunc("/", test)
-	log.Fatal(http.ListenAndServe(":80", nil))
+	log.Fatal(http.ListenAndServe(":443", nil))
 }
