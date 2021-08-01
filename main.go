@@ -1,4 +1,4 @@
-package ukromap
+package main
 
 import (
 	"fmt"
@@ -12,5 +12,5 @@ func test(w http.ResponseWriter, r *http.Request)  {
 
 func main() {
 	http.HandleFunc("/", test)
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	log.Fatal(http.ListenAndServe(":80", nil))
 }
