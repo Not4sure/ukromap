@@ -12,5 +12,6 @@ func test(w http.ResponseWriter, r *http.Request)  {
 
 func main() {
 	http.HandleFunc("/", test)
+	fmt.Println("Hello")
 	log.Fatal(http.ListenAndServe(":80", nil))
 }
